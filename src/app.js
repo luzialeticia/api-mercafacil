@@ -6,3 +6,5 @@ app.use((req, res) => {
         message: 'OK!'
     });
 });
+
+module.exports = app;
