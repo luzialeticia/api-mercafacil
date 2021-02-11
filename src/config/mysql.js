@@ -3,7 +3,7 @@ const dotEnv = require('dotenv');
 
 dotEnv.config();
 
-const pool = mysql.createPool({
+const connection = mysql.createConnection({
     "user": process.env.MYSQL_USER,
     "password": process.env.MYSQL_PASSWORD,
     "database": process.env.MYSQL_DATABASE,
@@ -11,4 +11,4 @@ const pool = mysql.createPool({
     "port": process.env.MYSQL_PORT
 });
 
-exports.pool = pool;
+module.exports = { connection }
