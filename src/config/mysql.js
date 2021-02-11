@@ -4,7 +4,6 @@ const dotEnv = require('dotenv');
 dotEnv.config();
 
 const connection = mysql.createConnection({
-    "dialect": 'mysql',
     "user": process.env.MYSQL_USER,
     "password": process.env.MYSQL_PASSWORD,
     "database": process.env.MYSQL_DATABASE,
