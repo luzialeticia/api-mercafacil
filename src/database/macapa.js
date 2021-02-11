@@ -7,4 +7,4 @@ const connection = new Sequelize(dbConfig);
 
 Contact.init(connection);
 
-module.exports = connection
+module.exports = connection;
