@@ -10,7 +10,7 @@ module.exports = {
         allowNull: false
       },
       name: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(200),
         allowNull: false
       },
       cellphone: {
