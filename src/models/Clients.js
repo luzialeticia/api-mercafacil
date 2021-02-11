@@ -4,7 +4,7 @@ class Client extends Model {
     static init(sequelize) {
         super.init({
             name: DataTypes.STRING(200),
-            password: DataTypes.STRING(20)
+            password_hash: DataTypes.STRING(20)
         }, {
             sequelize,
             modelName: 'client'
