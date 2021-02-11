@@ -1,7 +1,7 @@
 module.exports = {
     username: 'admin',
     password: 'admin',
-    database: 'macapa',
+    database: 'admin',
     host: 'localhost',
     dialect: 'mysql',
     define: {
