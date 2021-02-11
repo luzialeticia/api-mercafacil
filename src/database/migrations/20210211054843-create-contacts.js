@@ -9,11 +9,11 @@ module.exports = {
         autoIncrement: true,
         allowNull: false
       },
-      nome: {
+      name: {
         type: Sequelize.STRING,
         allowNull: false
       },
-      celular: {
+      cellphone: {
         type: Sequelize.STRING(20),
         allowNull: false
       }
