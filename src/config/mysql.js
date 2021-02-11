@@ -5,6 +5,6 @@ module.exports = {
     host: 'localhost',
     dialect: 'mysql',
     define: {
-        timestamps: true
+        timestamps: false
     }
   };
