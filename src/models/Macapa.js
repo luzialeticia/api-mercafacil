@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 
-class Contact extends Models {
+class Contact extends Model {
     static init(sequelize) {
         super.init({
             nome: DataTypes.STRING,
