@@ -10,3 +10,5 @@ class Contact extends Models {
         });
     };
 };
+
+module.exports = Contact;
