@@ -1,11 +1,6 @@
-const con = require('../config/mysql');
+const Sequelize = require('sequelize');
+const dbConfig = require('../config/mysql');
 
-con.connect((err) => {
-    if (err) {
-        console.log('Erro connecting to database...', err);
-        return;
-    }
-    console.log('Connection established!');
-});
+const connection = new Sequelize(dbConfig);
 
-module.exports = con;
+module.exports = connection
