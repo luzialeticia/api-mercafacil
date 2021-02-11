@@ -15,12 +15,4 @@ con.connect((err) => {
     console.log('Connection established!')
 });
 
-con.end((err) => {
-    if(err) {
-        console.log('Erro to finish connection...', err)
-        return 
-    }
-    console.log('The connection was finish...')
-});
-
 module.exports = con;
