@@ -6,7 +6,8 @@ class Contact extends Model {
             nome: DataTypes.STRING,
             celular: DataTypes.STRING(20)
         }, {
-            sequelize
+            sequelize,
+            modelName: 'contact'
         });
     };
 };
