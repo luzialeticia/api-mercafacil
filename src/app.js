@@ -2,10 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
-const mysqlDB = require('../src/database/mysql');
-const index = require('./routes/index');
 
-mysqlDB.connect();
+const index = require('./routes/index');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
