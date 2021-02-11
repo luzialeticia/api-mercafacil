@@ -1,4 +1,5 @@
 const Client = require('../models/Clients');
+const hash = require('bcrypt');
 
 module.exports = {
     async store(req, res) {
